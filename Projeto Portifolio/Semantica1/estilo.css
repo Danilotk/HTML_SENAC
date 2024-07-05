@@ -1,0 +1,54 @@
+body{
+    background-color: #36393b;
+}
+
+header{
+    background-image: url(imagens/fundo\ tecnologia.jpg);
+    padding: 50px;
+    border-radius: 35px;
+    height: 200px;
+
+}
+
+#container{
+    display: block;
+    width: 90%;
+    background-color: white;
+    height: 800px;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+a:hover{
+    color: red;
+    text-decoration: underline overline;
+}
+#center{
+    text-align: center;
+    padding: 30px;
+}
+h1{
+    color:#736a5f ;
+    padding: 5px;
+}
+
+h2{
+    color: #331c13;
+}
+
+h3{
+    color: red;
+}
