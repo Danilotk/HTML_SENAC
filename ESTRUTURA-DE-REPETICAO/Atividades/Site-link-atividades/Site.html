@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site</title>
     <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1533134486753-c833f0ed4866?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        }
+
         #Titulo {
             background-color: #005a5a;
             margin: 0;
@@ -15,404 +19,585 @@
 
         marquee {
             padding-bottom: 30px;
+            color: white;
         }
+
+        #container {
+            width: 650px;
+            border: solid rgb(250, 246, 246) 2px;
+            padding: 20px;
+        }
+
+        h3 {
+            color: white;
+            text-align: left;
+            margin: 15px;
+        }
+
+        h1,
+        p {
+            color: white;
+        }
+
+        a {
+            color: lightblue;
+            font-size: 24px;
+        }
+
+        img {
+            width: 80px;
+
+        }
+
+        #github {
+            filter: drop-shadow(0px 0px 2px #ffffff);
+        }
+
+        #links {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .atividade {
+            border: solid white 1px;
+            padding-bottom: 20px;
+        }
+        
     </style>
 </head>
 
 <body link="blue" alink="red" vlink="red">
 
     <center>
-        <h1 id="Titulo">Danilo Robert</h1>
+
         <marquee bgcolor="008b8b" scrollamount="10" direction="right" width="1500" height="40">
             <h1>
-                <font color="black">Bem-vindo ao meu site!</font>
+                <font color="white">Bem-vindo ao meu site!</font>
             </h1>
         </marquee>
-        <h1>Atividades</h1>
 
-        <H3>01-
-            Crie um programa que receba o nome, sobrenome e o e-mail do usuário, e depois imprima as informaçoes no
-            console.</H3>
-        <a href="../Atividade-1.html">Atividade-1</a>
-
-        <H3>02-
-            Crie uma variável que comece guardando o a cor, azul, depois troque para
-            amarelo, depois troque para vermelho depois troque para verde
-            Imprima na página conforme abaixo:
-            <br>
-            Cor começou em azul
-            <br>
-            Depois mudou para amarelo
-            <br>
-            Depois mudou para vermelho
-            <br>
-            Depois parou em verde
-            <br>
-        </H3>
-        <a href="../Atividade-2.html">Atividade-2.</a>
-
-        <H3>03-
-            Crie um programa que receba dois números e realize a soma, subtração,
-            multiplicação e divisão.
-
-            Imprima na página conforme abaixo:
-            <br>
-            Primeiro valor: 9
-            <br>
-            Segundo valor: 2
-            <br>
-            Operações:
-            <br>
-            Soma: 11
-            <br>
-            Subtração: 7
-            <br>
-            Multiplicação: 18
-            <br>
-            Divisão: 4.5
-            <br>
-        </H3>
-        <a href="../Atividade-3.html">Atividade-3</a>
-
-        <H3>04-
-            Crie um programa que receba o nome do aluno, uma nota para Português, uma
-            nota para Matemática e uma nota para Ciências, calcule a média entre as notas e
-            imprima na página conforme abaixo:
-            <br>
-            Boletim Escolar
-            <br>
-            Aluno: Cristiano
-            <br>
-            Português: 9
-            <br>
-            Matemática: 10
-            <br>
-            Ciências: 5
-            <br>
-            Média: 8
-            <br>
-
-        </H3>
-        <a href="../Atividade-4.html">Atividade-4</a>
-
-        <H3>05-Crie um programa que receba o nome do funcionário e seu salário mensal, dê um
-            aumento de 25% para esse funcionário e imprima na página conforme abaixo:
-            <br>
-            Funcionário: Cristiano
-            <br>
-            Salário: 2000
-            <br>
-            Porcentagem de aumento: 25%
-            <br>
-            Valor do aumento: 500
-            <br>
-            Novo salário: 2500
-            <br>
-        </H3>
-        <a href="../Atividade-5.html">Atividade-5</a>
-
-        <H3>06-
-            Crie um programa que solicite um número inteiro ao usuário, use if e else para
-            verificar se o número é par ou ímpar.
-            Imprima na página conforme abaixo:
-            Par ou Ímpar
-            <br>
-            Número digitado: 8
-            <br>
-            Definição: Par
-        </H3>
-        <br>
-        <a href="../Atividade-6.html">Atividade-6</a>
-
-        <H3>07-Crie um programa que solicite um número entre 1 a 12 ao usuário, e exiba uma na
-            página qual mês corresponde o número, use a condicional switch.
-            Observação, se o usuário digitar 12 deve aparecer também uma imagem do papai
-            Noel na página.
-            Imprima na console conforme abaixo:
-            <br>
-            Classificação Mês
-            <br>
-            Número digitado: 6
-            <br>
-            Mês correspondente: Junho
-            <br>
-        </H3>
-        <a href="../Atividade-7.html">Atividade-7</a>
-
-        <H3>08-Crie um programa que solicite ao usuário dois números inteiros e a operação
-            desejada, no final exibir os números digitados e o cálculo de acordo com a
-            operação.
-            Imprima no console conforme abaixo:
-            <br>
-            Esse exemplo simula que o usuário tenha escolhido multiplicação, porém ele
-            pode escolher soma, subtração ou divisão.
-            <br>
-            Calculadora Simples
-            <br>
-            1º Valor: 6
-            <br>
-            2º Valor: 3
-            <br>
-            Multiplicação: 18
-            <br>
-        </H3>
-        <a href="../Atividade-8.html">Atividade-8</a>
-
-        <H3>09-
-            Crie um programa que solicite a idade de uma pessoa e classifique-a como
-            "Criança", "Adolescente", "Adulto", ou "Idoso" usando if, else if, e else.
-            Critérios:
-            Idade menor que 12 criança, menor que 18 adolescente, maior ou igual a 18
-            adulto.
-            <br>
-            Imprima na página conforme abaixo:
-            <br>
-            Classificação Etária
-            <br>
-            Idade: 20
-            <br>
-            Classificação: Adulto
-        </H3>
-        <a href="../Atividade-9.html">Atividade-9</a </marquee>
-
-        <H3>010-
-            A padaria do Sr. Joaquim está com uma promoção, cada pãozinho custa R$ 1,00.
-            Se o cliente comprar acima de 15 pães cada um terá o custo de R$ 0,80
-            Crie um programa que solicite ao usuário informar quantos pães ele deseja,
-            imprima na página a quantidade de pães, o valor de cada pão, se entrou na
-            promoção da padaria e qual valor a pagar.
-            Imprima na página conforme abaixo:
-            <br>
-
-            Situação 01
-            Padaria Sr. Joaquim
-            Quantidade de pães: 18
-            Promoção da padaria: Aplicar desconto
-            Valor unitário R$ 0,80
-            Valor à pagar: R$ 14,40
-            <br>
-
-            Situação 02
-            Padaria Sr. Joaquim
-            Quantidade de pães: 10
-            Promoção da padaria: Fora do critério
-            Valor unitário R$ 1,00
-            Valor a pagar: R$ 10,00
-            <br>
-            Observação: Para aumentar ou diminuir casas decimais use to.Fixed(numero de casas)
-            <br>
-            Exemplo:
-            console.log('Valor unitário: ' + valorUnitario.toFixed(2))
-        </H3>
-        <a href="../Atividade-10.html">Atividade-10</a>
-
-        <H3>11-
-            Atividade em dupla, crie um quiz com as seguintes especificações:
-            1. Perguntas e Alternativas:
-            <br>
-            1. O quiz deve ter no mínimo 5 perguntas.
-            <br>
-            2. Cada pergunta deve ter 4 alternativas de resposta.
-            <br>
-            2. Interação com o Usuário:
-            <br>
-            1. Solicite ao usuário que escolha uma alternativa para cada pergunta.
-            <br>
-            3. Resultado do Quiz:
-            <br>
-            1. Após o usuário responder todas as perguntas, exiba um resumo com:
-            <br>
-            1. A alternativa correta para cada pergunta.
-            <br>
-            2. A alternativa que o usuário escolheu para cada pergunta.
-            <br>
-            3. A soma total de acertos (quantidade de respostas corretas).
-            <br>
-        </H3>
-        <a href="../Atividade-11.html">Atividade-11</a>
-
-        <H3>12-Crie um programa em JavaScript que:
-            <br>
-            1- Solicite ao usuario que insira um numero entre 1 e 10
-            <br>
-            2- Valide se o numero inserido esta dentro do intervalo permitido
-            <br>
-            3- com base no numero fornecido,gere e exiba a tabuada de multiplicaçao
-            <br>correspondente a esse numero (de 1 a 10)
-        </H3>
-        <a href="../Atividade-12.html">Atividade-12</a>
-        <br>
-
-        <H3>13-Crie um programa em javaScript que:
-            <br>
-            1-Crie um elemento de imagem (<img>).
-            <br>
-            2- Defina o tamanho de imagem como 100 pixels de largura
-            e 100 pixels de altura.
-            <br>
-            3-Exiba essa imagem na tela 1000 vezes.
-
-        </H3>
-        <a href="../Atividade-13.html">Atividade-13</a>
-        <br>
-
-        <H3>14-Crie um programa JavaScript que:
-            <br>
-            1- Solicite ao usuario que digite o nome de uma fruta.
-            <br>
-            2- Apos o usuario digitar o nome,o programa deve:
-            <br>
-            * Exibir o nome da fruta em portugues e em ingles
-            <br>
-            * Mostrar uma mensagem correspondente à fruta.
-        </H3>
-        <a href="../Atividade-14.html">Atividade-14</a>
-        <br>
-
-        <H3>15- Crie um programa em JavaScript que :
-            <br>
-            1- Armazene um numero fixo entre 1 e 10 (escolhido por voce).
-            <br>
-            2- Solicite ao usuario que tente adivinhar o numero.
-            <br>
-            3- Eenquanto o usuario não acertar
-            .
-        </H3>
-        <a href="../Atividade-15.html">Atividade-15</a>
-        <br>
-        <H3>16- Crie im programa JavaScript que:
-            <br>
-            1- crie uma variavel para aemazenar o nome,e-mail e telefone do usuario;
-            <br>
-            2- Crie uma função simple para imprimir todos os dados na pagina e no console
-        </H3>
-        <a href="../Atividade-16.html">Atividade-16</a>
-        <br>
-        <H3>17- Imprimir mensagem função com parametro 
-            <br>
-            Instruçoes
-            <br>
-            1- Desenvolva uma função imprimirMensagem que receba
-            <br>
-            uma mensagem como parametro e a imprima no console
-            <br>
-            2- Utilize a Função com Mensagens fixas:
-            <br>
-            Chame a função imprimirmensagem passando a mensagem AULA DE JavaScript
-            <br>
-            exiba corretamente no console.
-            <br>
-            Chame a função imprimirMensagem novamente,desta vez passando a mensagem
-            <br> CURSO TECNICO EM INFORMATICA
-            <br>como argumento, e verifique se a mensagem é exibida corretamente no console.
-            <br>
-            3- Solicite a mensagem do usuario:
-            <br>
-            Use o metodo prompt para solicitar ao usuario que digite uma 
-            <br>
-            mensagem.Armazene essa mensagem em uma variavel.
-            <br>
-            Chame a funcão ImprimirMensagem passando a mensagem
-            <br>
-            digitada pelo usuario como argumento e verifique se a mensagem do usuario
-            <br>
-            é exibida corretamente no console.
-
-
-           </H3>
-        <a href="../Atividade-17.html">Atividade-17</a>
-
-        <br>
-
-      
-
-
-
-
-        <H3>18- Calcular o dobro de um numero - Função com retorno
-            <br>
-            Instruçoes:
-            <br>
-            1- Crie uma função:
-            <br>
-            Desenvolva uma função chamada calcularDobro que receba um 
-            <br>
-            numero digitado pelo usuario como parametro e retorne o dobro desse numero
-            <br>
-            2 Teste a função:
-            <br>
-            Chame a função calcularDobro passando um numero como argumento e exiba o 
-            <br>
-            argumento e exiba o resultado no console para verificar se a função
-            <br>
-            está retornando o dobro corretamente
-
-           </H3>
-            .</H3>
-        <a href="../Atividade-18.html">Atividade-18</a>
+        <div id="container">
+            <h1 id="Titulo">Danilo Robert</h1>
+            <h1>Atividades</h1>
 
 
 
 
 
+            <div class="atividade">
+
+
+                <H3>01-
+                    Crie um programa que receba o nome, sobrenome e o e-mail do usuário, e depois imprima as informaçoes
+                    no
+                    console.</H3>
+                <a href="../Atividade-1.html">Atividade-1</a>
+            </div>
+            <div class="atividade">
+
+                <H3>02-
+                    Crie uma variável que comece guardando o a cor, azul, depois troque para
+                    amarelo, depois troque para vermelho depois troque para verde
+                    Imprima na página conforme abaixo:
+                    <br>
+                    Cor começou em azul
+                    <br>
+                    Depois mudou para amarelo
+                    <br>
+                    Depois mudou para vermelho
+                    <br>
+                    Depois parou em verde
+                    <br>
+                </H3>
+                <a href="../Atividade-2.html">Atividade-2.</a>
+            </div>
+            <div class="atividade">
+                <H3>03-
+                    Crie um programa que receba dois números e realize a soma, subtração,
+                    multiplicação e divisão.
+
+                    Imprima na página conforme abaixo:
+                    <br>
+                    Primeiro valor: 9
+                    <br>
+                    Segundo valor: 2
+                    <br>
+                    Operações:
+                    <br>
+                    Soma: 11
+                    <br>
+                    Subtração: 7
+                    <br>
+                    Multiplicação: 18
+                    <br>
+                    Divisão: 4.5
+                    <br>
+                </H3>
+                <a href="../Atividade-3.html">Atividade-3</a>
+            </div>
+            <div class="atividade">
+                <H3>04-
+                    Crie um programa que receba o nome do aluno, uma nota para Português, uma
+                    nota para Matemática e uma nota para Ciências, calcule a média entre as notas e
+                    imprima na página conforme abaixo:
+                    <br>
+                    Boletim Escolar
+                    <br>
+                    Aluno: Cristiano
+                    <br>
+                    Português: 9
+                    <br>
+                    Matemática: 10
+                    <br>
+                    Ciências: 5
+                    <br>
+                    Média: 8
+                    <br>
+
+                </H3>
+                <a href="../Atividade-4.html">Atividade-4</a>
+            </div>
+            <div class="atividade">
+                <H3>05-Crie um programa que receba o nome do funcionário e seu salário mensal, dê um
+                    aumento de 25% para esse funcionário e imprima na página conforme abaixo:
+                    <br>
+                    Funcionário: Cristiano
+                    <br>
+                    Salário: 2000
+                    <br>
+                    Porcentagem de aumento: 25%
+                    <br>
+                    Valor do aumento: 500
+                    <br>
+                    Novo salário: 2500
+                    <br>
+                </H3>
+                <a href="../Atividade-5.html">Atividade-5</a>
+            </div>
+            <div class="atividade">
+
+                <H3>06-
+                    Crie um programa que solicite um número inteiro ao usuário, use if e else para
+                    verificar se o número é par ou ímpar.
+                    Imprima na página conforme abaixo:
+                    Par ou Ímpar
+                    <br>
+                    Número digitado: 8
+                    <br>
+                    Definição: Par
+                </H3>
+                <br>
+                <a href="../Atividade-6.html">Atividade-6</a>
+            </div>
+            <div class="atividade">
+
+                <H3>07-Crie um programa que solicite um número entre 1 a 12 ao usuário, e exiba uma na
+                    página qual mês corresponde o número, use a condicional switch.
+                    Observação, se o usuário digitar 12 deve aparecer também uma imagem do papai
+                    Noel na página.
+                    Imprima na console conforme abaixo:
+                    <br>
+                    Classificação Mês
+                    <br>
+                    Número digitado: 6
+                    <br>
+                    Mês correspondente: Junho
+                    <br>
+                </H3>
+                <a href="../Atividade-7.html">Atividade-7</a>
+            </div>
+            <div class="atividade">
+
+                <H3>08-Crie um programa que solicite ao usuário dois números inteiros e a operação
+                    desejada, no final exibir os números digitados e o cálculo de acordo com a
+                    operação.
+                    Imprima no console conforme abaixo:
+                    <br>
+                    Esse exemplo simula que o usuário tenha escolhido multiplicação, porém ele
+                    pode escolher soma, subtração ou divisão.
+                    <br>
+                    Calculadora Simples
+                    <br>
+                    1º Valor: 6
+                    <br>
+                    2º Valor: 3
+                    <br>
+                    Multiplicação: 18
+                    <br>
+                </H3>
+                <a href="../Atividade-8.html">Atividade-8</a>
+            </div>
+            <div class="atividade">
+                <H3>09-
+                    Crie um programa que solicite a idade de uma pessoa e classifique-a como
+                    "Criança", "Adolescente", "Adulto", ou "Idoso" usando if, else if, e else.
+                    Critérios:
+                    Idade menor que 12 criança, menor que 18 adolescente, maior ou igual a 18
+                    adulto.
+                    <br>
+                    Imprima na página conforme abaixo:
+                    <br>
+                    Classificação Etária
+                    <br>
+                    Idade: 20
+                    <br>
+                    Classificação: Adulto
+                </H3>
+                <a href="../Atividade-9.html">Atividade-9</a </marquee>
+                </div>
+
+                <div class="atividade">
+                <H3>010-
+                    A padaria do Sr. Joaquim está com uma promoção, cada pãozinho custa R$ 1,00.
+                    Se o cliente comprar acima de 15 pães cada um terá o custo de R$ 0,80
+                    Crie um programa que solicite ao usuário informar quantos pães ele deseja,
+                    imprima na página a quantidade de pães, o valor de cada pão, se entrou na
+                    promoção da padaria e qual valor a pagar.
+                    Imprima na página conforme abaixo:
+                    <br>
+
+                    Situação 01
+                    Padaria Sr. Joaquim
+                    Quantidade de pães: 18
+                    Promoção da padaria: Aplicar desconto
+                    Valor unitário R$ 0,80
+                    Valor à pagar: R$ 14,40
+                    <br>
+
+                    Situação 02
+                    Padaria Sr. Joaquim
+                    Quantidade de pães: 10
+                    Promoção da padaria: Fora do critério
+                    Valor unitário R$ 1,00
+                    Valor a pagar: R$ 10,00
+                    <br>
+                    Observação: Para aumentar ou diminuir casas decimais use to.Fixed(numero de casas)
+                    <br>
+                    Exemplo:
+                    console.log('Valor unitário: ' + valorUnitario.toFixed(2))
+                </H3>
+                <a href="../Atividade-10.html">Atividade-10</a>
+            </div>
+            <div class="atividade">
+                <H3>11-
+                    Atividade em dupla, crie um quiz com as seguintes especificações:
+                    1. Perguntas e Alternativas:
+                    <br>
+                    1. O quiz deve ter no mínimo 5 perguntas.
+                    <br>
+                    2. Cada pergunta deve ter 4 alternativas de resposta.
+                    <br>
+                    2. Interação com o Usuário:
+                    <br>
+                    1. Solicite ao usuário que escolha uma alternativa para cada pergunta.
+                    <br>
+                    3. Resultado do Quiz:
+                    <br>
+                    1. Após o usuário responder todas as perguntas, exiba um resumo com:
+                    <br>
+                    1. A alternativa correta para cada pergunta.
+                    <br>
+                    2. A alternativa que o usuário escolheu para cada pergunta.
+                    <br>
+                    3. A soma total de acertos (quantidade de respostas corretas).
+                    <br>
+                </H3>
+                <a href="../Atividade-11.html">Atividade-11</a>
+            </div>
+            <div class="atividade">
+                <H3>12-Crie um programa em JavaScript que:
+                    <br>
+                    1- Solicite ao usuario que insira um numero entre 1 e 10
+                    <br>
+                    2- Valide se o numero inserido esta dentro do intervalo permitido
+                    <br>
+                    3- com base no numero fornecido,gere e exiba a tabuada de multiplicaçao
+                    <br>correspondente a esse numero (de 1 a 10)
+                </H3>
+                <a href="../Atividade-12.html">Atividade-12</a>
+                <br>
+            </div>
+                <div class="atividade">
+                <H3>13-Crie um programa em javaScript que:
+                    <br>
+                    1-Crie um elemento de imagem (<img>).
+                    <br>
+                    2- Defina o tamanho de imagem como 100 pixels de largura
+                    e 100 pixels de altura.
+                    <br>
+                    3-Exiba essa imagem na tela 1000 vezes.
+
+                </H3>
+                <a href="../Atividade-13.html">Atividade-13</a>
+                <br>
+            </div>
+
+            <div class="atividade">
+                <H3>14-Crie um programa JavaScript que:
+                    <br>
+                    1- Solicite ao usuario que digite o nome de uma fruta.
+                    <br>
+                    2- Apos o usuario digitar o nome,o programa deve:
+                    <br>
+                    * Exibir o nome da fruta em portugues e em ingles
+                    <br>
+                    * Mostrar uma mensagem correspondente à fruta.
+                </H3>
+                <a href="../Atividade-14.html">Atividade-14</a>
+                <br>
+</div>
+
+<div class="atividade">
+                <H3>15- Crie um programa em JavaScript que :
+                    <br>
+                    1- Armazene um numero fixo entre 1 e 10 (escolhido por voce).
+                    <br>
+                    2- Solicite ao usuario que tente adivinhar o numero.
+                    <br>
+                    3- Eenquanto o usuario não acertar
+                    .
+                </H3>
+                <a href="../Atividade-15.html">Atividade-15</a>
+                <br>
+            </div>
+
+            <div class="atividade">
+                <H3>16- Crie im programa JavaScript que:
+                    <br>
+                    1- crie uma variavel para aemazenar o nome,e-mail e telefone do usuario;
+                    <br>
+                    2- Crie uma função simple para imprimir todos os dados na pagina e no console
+                </H3>
+                <a href="../Atividade-16.html">Atividade-16</a>
+                <br>
+            </div>
+
+            <div class="atividade">
+                <H3>17- Imprimir mensagem função com parametro
+                    <br>
+                    Instruçoes
+                    <br>
+                    1- Desenvolva uma função imprimirMensagem que receba
+                    <br>
+                    uma mensagem como parametro e a imprima no console
+                    <br>
+                    2- Utilize a Função com Mensagens fixas:
+                    <br>
+                    Chame a função imprimirmensagem passando a mensagem AULA DE JavaScript
+                    <br>
+                    exiba corretamente no console.
+                    <br>
+                    Chame a função imprimirMensagem novamente,desta vez passando a mensagem
+                    <br> CURSO TECNICO EM INFORMATICA
+                    <br>como argumento, e verifique se a mensagem é exibida corretamente no console.
+                    <br>
+                    3- Solicite a mensagem do usuario:
+                    <br>
+                    Use o metodo prompt para solicitar ao usuario que digite uma
+                    <br>
+                    mensagem.Armazene essa mensagem em uma variavel.
+                    <br>
+                    Chame a funcão ImprimirMensagem passando a mensagem
+                    <br>
+                    digitada pelo usuario como argumento e verifique se a mensagem do usuario
+                    <br>
+                    é exibida corretamente no console.
+                
+
+                </H3>
+                <a href="../Atividade-17.html">Atividade-17</a>
+
+                <br>
+
+            </div>
+
+
+
+            <div class="atividade">
+                <H3>18- Calcular o dobro de um numero - Função com retorno
+                    <br>
+                    Instruçoes:
+                    <br>
+                    1- Crie uma função:
+                    <br>
+                    Desenvolva uma função chamada calcularDobro que receba um
+                    <br>
+                    numero digitado pelo usuario como parametro e retorne o dobro desse numero
+                    <br>
+                    2 Teste a função:
+                    <br>
+                    Chame a função calcularDobro passando um numero como argumento e exiba o
+                    <br>
+                    argumento e exiba o resultado no console para verificar se a função
+                    <br>
+                    está retornando o dobro corretamente
+
+                </H3>
+                .</H3>
+                <a href="../Atividade-18.html">Atividade-18</a>
+                <br>
+            </div>
 
 
 
 
 
+            <div class="atividade">
+                <H3>019-Verificar se um numero é Par ou impar
+                    <br>
+                    1- Desenvolva uma função anonima que:
+                    <br>
+                    *Receba um numero como entrada
+                    <br>
+                    *Utilize a função prompt para solicitar ao usuario que insira um numero
+                    <br>
+                    *Determine se o numero é par ou impar.
+                    <br>
+                    *Retorne uma mensagem indicando se o numero é "par" ou "impar"
+                    <br>
+                    2- A função deve ser armazenada em uma variavel chamada verificarParImpar
+                    <br>
+                    3- Utilize a função document.write para exibir a mensagem retornada pela função no navegador
+                    .
+                </H3>
+                <a href="../Atividade-19.html">Atividade-19</a>
+                <br>
+            </div>
+
+
+            <div class="atividade">
+                <H3>20- Usando funçoes nativas imprima no console e na pagina de acordo
+                    <br>
+                    o sistema operacional no formato abaixo:
+                    <br>
+                    08/08/2024
+                </H3>
+                <a href="../Atividade-20.html">Atividade-20</a>
+                <br>
+            </div>
+
+            <div class="atividade">
+                <H3>21-Usando Funçoes nativas, Imprima no console e na pagina
+                    <br>
+                    a data de acordo com osistema operacional no formato abaixo:
+                    <br>
+                    Quinta-feira,08 de agosto de 2024
+                </H3>
+                <a href="../Atividade-21.html">Atividade-21</a>
+                <br>
+            </div>
+            <div class="atividade">
+                <H3>22-Utilize os recursos aprendidos durante a aula de eventos e crie
+                    <br>
+                    script que realize a simulação de uma lampada acendendo e
+                    <br>
+                    apagando ao clicar ao clicar em algum elemento.
+                </H3>
+                <a href="../Atividade-22.html">Atividade-22</a>
+                <br>
+
+            </div>
+            <div class="atividade">
+                <H3>23-Desenvolva um programa que permita ao usuario alterar a cor
+                    <br>
+                    de um elemento na pagina .Oprograma deve:
+                    <br>
+                    1- Exibir um campo de entrada (prompt) para o usuario inserir o nome de uma cor
+                    <br>
+                    2- Quando o Usuario fornecer uma cor,de fundo de uma div na pagina
+                    <br>
+                    deve ser alterada para cor escolhida
+                    <br>
+                    3- Incluir um botão abaixo da div que permita ao usuario tentar escolher outra cor.
+                </H3>
+                <a href="../Atividade-23.html">Atividade-23</a>
+                <br>
+            </div>
+
+            <div class="atividade">
+                <H3>24-manipulação de eventos de mouse:elabore um programa HTML,CSS e JavaScript
+                    <br>
+                    que utilize diversos eventos de mouse para criar
+                    <br>
+                    interaçoes dinamicas em uma Pagina web.
+                    <br>
+                    O programa deve incluir manipulação dos seguintes eventos:
+                    <br>
+                    1- Onclick: Acione um evento quando o botão do mouse for clicado em um elemento.
+                    <br>
+                    2-Ondblclick: Acione um evento quando o botão do mouse for clicado
+                    <br>
+                    duas vezes rapidamente em um elemento.
+                    <br>
+                    3- Onmouseouver: Acione um evento quando o cursor do mouse passar sobre um elemento
+                    <br>
+                    4- Onmouseout: Acione um evento quando o cursor do mouse sair da area de um elemento
+                    <br>
+                    5- Onmouseup: Acione um evento quando o botão do mouse for solto sobre um elemneto.
+                    <br>
+                    Observação:descreva o anunciado do programa que ira criar
+
+                </H3>
+                <a href="../Atividade-24.html">Atividade-24</a>
+                <br>
+            </div>
+                <div class="atividade">
+                <H3>25-manipulação de eventos de Teclados:elabore um programa HTML,CSS e JavaScript
+                    <br>
+                    que utilize diversos eventos de Teclados para criar
+                    <br>
+                    interaçoes dinamicas em uma Pagina web.
+                    <br>
+                    O programa deve incluir manipulação dos seguintes eventos:
+                    <br>
+                    1-Onkeydown:Acione um evento quando uma tecla for pressionada.
+                    <br>
+                    2- Onkeyup:Acione um evento quando uma tecla for solicitar.
+                    <br>
+                    3- Onkeypress:Acione um Evento Quando uma tecla for pressionada e
+                    <br>
+                    e depois solta,com foco em teclas que geram caracteres.
+                    <br>
+                    Observação:Descreva o enunciado do programa que ira criar
+
+                </H3>
+                <a href="../Atividade-25.html">Atividade-25</a>
+                <br>
+            </div>
+                <div class="atividade">
+                <H3>26-Crie uma variável para a armazenar
+                    <br>
+                    o nome, email e telefone. e imprima na impressora:
+                    .
+                </H3>
+                <a href="../Atividade-26.html">Atividade-26</a>
+                <br>
+            </div>
+                <div class="atividade">
+                <H3>27-Utilizando HTML,CSS e Javascript,Crie os relogios abaixos:
+                </H3>
+                <a href="../Atividade-27.html">Atividade-27</a>
+            </div>
+                <div class="atividade">
+                <H3>28-Crie os formularios abaixo utilizando Htmle css,
+                    <br> realize a validação dos dos campos usando Javascript.
+                </H3>
+                <a href="../Atividade-28/Atividade-28-A.html">Atividade-28</a>
+                <a href="../Atividade-28/Atividade-28-A.html">Atividade-28</a>
+
+            </div>
+                <div id="links">
+                    <a href="https://github.com/Danilotk"><img src="github.webp" id="github"></a>
+                    <a href="https://br.linkedin.com/in/danilo-robert-46ab69304"><img src="linkedin.png"></a>
+                </div>
+
+
+            </div>
 
 
 
-
-        </marquee>
-        <h1>
-            <font color="white">Danilo Robert</font>
-        </h1>
-
-
-
-        </marquee>
     </center>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -444,6 +629,8 @@
             <font face="arial" size="2" color="#7f7a83">© 2024 Empresa Exemplo. Todos os direitos reservados.</font>
         </p>
     </footer>
+
+
 
 
 </body>

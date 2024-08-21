@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilo.css">
+
 </head>
+
 <body>
 
-    <div id="container ">
 
-        <form action="">
-            <div class="titulo"><h1>Cadastro</h1></div>
+
+    <div id="container">
+
+        <form onsubmit="return validarFormulario()">
+            <div class="titulo"><h1>login</h1></div>
             <br>
 
-            <div><label for="nome">Nome:</label></div>
-            <div id="inputNome"><input type="text"></div>
-            <div><label for="E-mail">E-mail:</label></div>
-            <div id="inputNome"><input type="text"></div>
-            <div><label for="Senha">Senha:</label></div>
-            <div id="inputNome"><input type="text"></div>
+            <div><label for="usuario">usuario:</label></div>
+            <div id="usuario"><input type="text" id="usuario"></div>
+            <div><label for="senha">senha:</label></div>
+            <div id="senha"><input type="text" id="senha"></div>
 
-            <button>Cadastro</button>
+            <button>loguin</button>
+            <div id="mensagemErro"></div>
             
            
             
@@ -30,6 +35,10 @@
        
     </div>
 
-    
+
+    <script src="validarlogin.js"></script>
+
+
 </body>
+
 </html>
