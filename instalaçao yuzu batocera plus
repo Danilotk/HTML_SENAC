@@ -1,0 +1,94 @@
+#!/bin/bash
+# Script autônomo para instalar Yuzu no Batocera Plus (versão Batocera Linux 41)
+
+# Verificar root
+if [ "$(id -u)" -ne 0 ]; then
+    echo "Por favor, execute como root!"
+    exit 1
+fi
+
+# Verificar Batocera Plus
+if [ ! -d "/userdata/system" ]; then
+    echo "ERRO: Sistema não é Batocera Plus!"
+    exit 1
+fi
+
+# Verificar arquitetura
+if [ "$(uname -m)" != "x86_64" ]; then
+    echo "ERRO: Requer sistema x86_64 (64-bit)"
+    exit 1
+fi
+
+# URLs e diretórios
+YUZU_URL="https://github.com/yuzu-emu/yuzu-mainline/releases/download/mainline-0-2025/yuzu-linux-x86_64-mainline-0-2025.tar.xz"
+INSTALL_DIR="/userdata/system/yuzu"
+BIN_DIR="/usr/bin"
+DESKTOP_DIR="/usr/share/applications"
+ICONS_DIR="/usr/share/icons/hicolor/scalable/apps"
+
+# Criar diretórios
+mkdir -p "$INSTALL_DIR" "$DESKTOP_DIR" "$ICONS_DIR"
+
+# Função para instalar dependências
+install_deps() {
+    echo "Instalando dependências..."
+    apt-get update
+    apt-get install -y libqt5core5a libqt5gui5 libqt5widgets5 libqt5network5 libqt5concurrent5 libssl3
+}
+
+# Função principal
+main_install() {
+    echo "╔════════════════════════════════════╗"
+    echo "║   INSTALANDO YUZU NO BATOCERA PLUS ║"
+    echo "╚════════════════════════════════════╝"
+    
+    # Baixar e extrair Yuzu
+    echo "▶ Baixando Yuzu..."
+    if ! wget -q --show-progress "$YUZU_URL" -O /tmp/yuzu.tar.xz; then
+        echo "ERRO: Falha ao baixar Yuzu!"
+        exit 1
+    fi
+    
+    echo "▶ Extraindo arquivos..."
+    tar -xf /tmp/yuzu.tar.xz -C "$INSTALL_DIR" --strip-components=1
+    
+    # Configurar sistema
+    echo "▶ Configurando..."
+    ln -sf "$INSTALL_DIR/yuzu" "$BIN_DIR/yuzu"
+    chmod +x "$INSTALL_DIR/yuzu"
+    
+    # Ícone
+    if [ -f "$INSTALL_DIR/yuzu.svg" ]; then
+        cp "$INSTALL_DIR/yuzu.svg" "$ICONS_DIR/"
+    else
+        wget -q "https://raw.githubusercontent.com/yuzu-emu/yuzu/master/dist/yuzu.svg" -O "$ICONS_DIR/yuzu.svg"
+    fi
+    
+    # Atalho
+    echo "▶ Criando atalho..."
+    cat > "$DESKTOP_DIR/yuzu.desktop" <<EOL
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Yuzu Emulator
+Comment=Nintendo Switch Emulator
+Exec=yuzu %f
+Icon=yuzu
+Terminal=false
+Categories=Game;Emulator;
+EOL
+
+    # Limpeza
+    rm -f /tmp/yuzu.tar.xz
+    
+    echo "✔ Instalação concluída com sucesso!"
+    echo ""
+    echo "O que fazer agora:"
+    echo "1. Adicione 'prod.keys' em: $INSTALL_DIR/keys/"
+    echo "2. Seus jogos devem ficar em: /userdata/roms/switch/"
+    echo "3. Reinicie o sistema"
+}
+
+# Executar instalação
+install_deps
+main_install
